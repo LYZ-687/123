@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html  >
+<head>
+
+<title>javascript learn </title>
+</head>
+<body>
+	
+<script>
+function mYFunction()
+{
+	x= document.getElementById("demo");
+	x.innerHTML = "change the article";
+	
+}
+
+document.write("<h1>这是一个标题</h1>");
+
+</script>
+<p>
+您只能在 HTML 输出流中<strong>使用 document.write</strong>。
+如果您在文档已加载后使用它（比如在函数中），会覆盖整个文档。
+</p>
+<script>
+document.write("<h2>这是一个段落。</h2>");
+</script>
+<p>
+如果您在文档已加载后使用它（比如在函数中），会覆盖整个文档。
+</p>
+<p id = "demo">
+这里是即将被改变的的内容 。
+</p>
+<button type = "button" onclick= "mYFunction()"> I Know </button>
+</body>
+</html>
